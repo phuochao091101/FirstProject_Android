@@ -28,15 +28,18 @@
         android:text="Add" />
 
     <LinearLayout
+        xmlns:tools="https://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal">
+        xmlns:app="https://schemas.android.com/apk/res-auto"
+        tools:context="com.journaldev.customlistview.HomeActivity"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical" >
 
         <ListView
             android:id="@+id/listView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
     </LinearLayout>
 
 </LinearLayout>
